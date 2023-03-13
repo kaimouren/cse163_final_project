@@ -59,7 +59,7 @@ Both regression techniques are aim to find the relationship between dependent va
 To reproduce our results, You can directly run our code. The resulting plots will be saved as .png files in the same directory as the code. The coefficients results of logistic regression and LASSO regression are shown in Terminal
 ### Machine Learning
 The machine learning part contains the code to perform decision tree and random forest analysis. Decision trees are a powerful tool for classification and prediction, while random forests are an ensemble learning method that uses multiple decision trees to improve the accuracy of the prediction. We use the several packages in this part: pandas, matplotlib, seaborn, and graphviz. To import these packages, you can run the code that；
-···
+```
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -70,7 +70,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix as cm
-···
+```
 Specifically, Graphviz requires some more steps to set up. You can follow the instruction from its offical website(https://www.computerhope.com/issues/ch000549.htm). Then, below is the description of each function:
 
 `encode_purpose_column(data: pd.DataFrame) -> pd.DataFrame`: Takes in a Pandas DataFrame containing loan data. Returns a new DataFrame with one-hot encoded columns of the 'purpose' column concatenated to the input DataFrame.
